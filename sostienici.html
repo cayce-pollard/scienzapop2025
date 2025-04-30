@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ScienzaPop 2025</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body { font-family: sans-serif; background: #fffaf2; color: #222; margin: 0; padding: 0; line-height: 1.6; }
     header, footer { background: #e67f32; color: white; padding: 1.5em 1em; text-align: center; }
@@ -12,34 +13,38 @@
     nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
     section { margin-bottom: 3em; }
     .event { margin-bottom: 1em; }
-    img.logo { max-width: 300px; margin: 1em auto; display: block; }
+    img.logo { max-width: 300px; margin: 1em auto; display: block; animation: fadeZoomIn 1s ease-out; }
+    @keyframes fadeZoomIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
     ul.years { list-style: none; padding: 0; display: flex; gap: 1em; justify-content: center; }
     ul.years li a { font-weight: bold; color: #e67f32; text-decoration: underline; }
   </style>
 </head>
 <body>
-  
   <header>
     <a href="index.html"><img src="logo.png" alt="ScienzaPop Logo" class="logo"></a>
     <p>13–15 giugno 2025 - Roma</p>
     <nav>
       <a href="programma.html">Programma</a>
-      <a href="relatori.html">Relatori</a>
+      <a href="ospiti.html">Ospiti</a>
+      <a href="laboratori.html">Laboratori</a>
       <a href="sostienici.html">Sostienici</a>
       <a href="info.html">Info</a>
       <a href="galleria.html">Galleria</a>
       <a href="precedenti-edizioni.html">Precedenti edizioni</a>
+      <a href="chi-siamo.html">Chi siamo</a>
     </nav>
   </header>
 
-  <div class="container">
+    <div class="container">
+      <section>
+        <h2>Sostienici</h2>
+        <p>ScienzaPop è autofinanziato e indipendente. Il tuo contributo ci aiuterà a coprire le spese di ospitalità, materiali e logistica. Partecipa al crowdfunding su <a href="https://www.produzionidalbasso.com/" target="_blank">Produzioni dal Basso</a>.</p>
+      </section>
+    </div>
     
-    <section>
-      <h2>Sostienici</h2>
-      <p>ScienzaPop è autofinanziato e indipendente. Il tuo contributo ci aiuterà a coprire le spese di ospitalità, materiali e logistica. Partecipa al crowdfunding su <a href="https://www.produzionidalbasso.com/" target="_blank">Produzioni dal Basso</a>.</p>
-    </section>
-    
-  </div>
   <footer>
     <p>ScienzaPop © 2025 · Festival indipendente dell’Esquilino</p>
   </footer>
