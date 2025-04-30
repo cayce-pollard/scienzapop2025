@@ -1,0 +1,13 @@
+.commento {
+  color: #d35400;
+  font-style: italic;
+  background-color: #fef5e7;
+  padding: 0.2em 0.4em;
+  border-left: 3px solid #d35400;
+}
+mark {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.2em 0.4em;
+}
+
