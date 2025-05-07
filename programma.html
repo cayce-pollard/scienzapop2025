@@ -1,39 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>scienzapop – Programma</title>
+  <title>Programma 2025</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body { font-family: sans-serif; background: #fffaf2; color: #222; margin: 0; padding: 0; line-height: 1.6; }
     header, footer { background: #e67f32; color: white; padding: 1.5em 1em; text-align: center; }
     nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
     .container { max-width: 800px; margin: auto; padding: 1em; }
-    .switch-buttons { text-align: center; margin: 1em 0; }
-    .switch-buttons button {
-      margin: 0.5em;
-      padding: 0.5em 1em;
-      font-weight: bold;
-      border: none;
-      background-color: #e67f32;
-      color: white;
-      cursor: pointer;
-    }
-    .switch-buttons button.active { background-color: #c95f1e; }
-    .theme-content { display: none; }
-    .theme-content.active { display: block; }
+    img.logo { max-width: 300px; margin: 1em auto; display: block; }
+    h1 { text-align: center; }
   </style>
-  <script data-goatcounter="https://scienzapop2025.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js">
-  </script>
 </head>
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="scienzapop logo" style="max-width: 300px; display: block; margin: auto;"></a>
-    <p>13–15 giugno 2025 - Via Bixio pedonale, Roma</p>
+    <a href="index.html"><img src="logo.png" alt="scienzapop logo" class="logo"></a>
+    <p>13–15 giugno 2025 - Roma</p>
     <nav>
       <a href="programma.html">Programma</a>
       <a href="ospiti.html">Ospiti</a>
@@ -48,61 +33,19 @@
 
   <div class="container">
     <h1>Programma 2025</h1>
-    <div class="switch-buttons">
-      <button id="btn-potere" class="active">Scienza e Potere</button>
-      <button id="btn-limite">Limite</button>
-    </div>
-
-    <div id="potere" class="theme-content active">
-      
-<h2>Programma </h2>
+    
 <p>scienzapop 2025 si terrà dal 13 al 15 giugno, con incontri alle 18:30 e alle 20:30. Tutti gli eventi sono gratuiti e aperti al pubblico.</p>
 <h3>Venerdì 13 giugno</h3>
-<p>20:30 – Marcello Petitta: <em>Clima ....</em></p>
+<p>20:30 – Marcello Petitta: <em>Clima e verità. Quando la scienza sfida il potere</em></p>
 <h3>Sabato 14 giugno</h3>
-<p>18:30 – Elisa Palazzi: <em>Clima ....</em><br> 20:30 – Carola Frediani: <em>Guerre di rete. Intelligenza artificiale, dati e potere</em></p>
+<p>18:30 – Elisa Palazzi<br>20:30 – Carola Frediani: <em>Guerre di rete. Intelligenza artificiale, dati e nuove forme di potere</em></p>
 <h3>Domenica 15 giugno</h3>
-<p>18:30 – Edwige Pezzulli<em>Scienza per chi? </em><br>20:30 – Amedeo Balbi: <em>Oltre il cielo: la conquista dello spazio spazio</em></p>
+<p>18:30 – Edwige Pezzulli<br>20:30 – Amedeo Balbi: <em>Oltre il cielo: spazio, scienza e potere</em></p>
 
-    </div>
-
-    <div id="limite" class="theme-content">
-      
-<h2>Programma </h2>
-<p>scienzapop 2025 si terrà dal 13 al 15 giugno, con incontri alle 18:30 e alle 20:30. Tutti gli eventi sono gratuiti e aperti al pubblico.</p>
-<h3>Venerdì 13 giugno</h3>
-<p>20:30 – Marcello Petitta: <em>Clima e limiti del pianeta</em></p>
-<h3>Sabato 14 giugno</h3>
-<p>18:30 – Elisa Palazzi: <em>Clima ...</em><br>20:30 – Carola Frediani: <em>Algoritmi al limite. AI e responsabilità</em></p>
-<h3>Domenica 15 giugno</h3>
-<p>18:30 – Edwige Pezzulli: <em> ...</em><br>20:30 – Amedeo Balbi: <em>Esplorare i confini dell’universo</em></p>
-
-    </div>
   </div>
 
   <footer>
     <p>scienzapop © 2025 · Festival indipendente dell’Esquilino</p>
   </footer>
-
-  <script>
-    const btnPotere = document.getElementById('btn-potere');
-    const btnLimite = document.getElementById('btn-limite');
-    const contentPotere = document.getElementById('potere');
-    const contentLimite = document.getElementById('limite');
-
-    btnPotere.addEventListener('click', () => {
-      btnPotere.classList.add('active');
-      btnLimite.classList.remove('active');
-      contentPotere.classList.add('active');
-      contentLimite.classList.remove('active');
-    });
-
-    btnLimite.addEventListener('click', () => {
-      btnLimite.classList.add('active');
-      btnPotere.classList.remove('active');
-      contentLimite.classList.add('active');
-      contentPotere.classList.remove('active');
-    });
-  </script>
 </body>
 </html>
