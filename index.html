@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ScienzaPop 2025</title>
+  <title>scienzapop 2025</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body { font-family: sans-serif; background: #fffaf2; color: #222; margin: 0; padding: 0; line-height: 1.6; }
     header, footer { background: #e67f32; color: white; padding: 1.5em 1em; text-align: center; }
     nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
     .container { max-width: 800px; margin: auto; padding: 1em; }
-    .switch-buttons { text-align: center; margin: 1em 0; }
-    .switch-buttons button {
-      margin: 0.5em;
-      padding: 0.5em 1em;
-      font-weight: bold;
-      border: none;
-      background-color: #e67f32;
-      color: white;
-      cursor: pointer;
-    }
-    .switch-buttons button.active {
-      background-color: #c95f1e;
-    }
-    .theme-content { display: none; }
-    .theme-content.active { display: block; }
+    img.logo { max-width: 300px; margin: 1em auto; display: block; }
+    .accento { color: #c0392b; font-weight: bold; }
   </style>
-  <script data-goatcounter="https://scienzapop2025.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js">
-  </script>
 </head>
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="ScienzaPop Logo" style="max-width: 300px; display: block; margin: auto;"></a>
-    <p>13–15 giugno 2025 - Via Bixio pedonale, Roma</p>
+    <a href="index.html"><img src="logo.png" alt="scienzapop logo" class="logo"></a>
+    <p>13–15 giugno 2025 - Roma</p>
     <nav>
       <a href="programma.html">Programma</a>
       <a href="ospiti.html">Ospiti</a>
@@ -48,49 +32,13 @@
   </header>
 
   <div class="container">
-    <h1>scienzapop 2025 – <mark>Tema in discussione</mark></h1>
-    <p><strong>  <mark>Stiamo valutando due parole chiave. Puoi switchare qui sotto:</mark> </strong></p>
-    <div class="switch-buttons">
-      <button id="btn-potere" class="active">Scienza e Potere</button>
-      <button id="btn-limite">Limite</button>
-    </div>
-
-    <div id="potere" class="theme-content active">
-      <h2>Scienza e Potere</h2>
-      <p>ScienzaPop torna nel cuore dell’Esquilino con tre giorni di incontri aperti a tutti. Discuteremo insieme di clima, intelligenza artificiale, inclusione e spazio, con parole semplici e idee potenti.</p>
-      <p>Il rapporto tra scienza e potere è ambivalente: la scienza è usata dal potere per controllare, per estrarre, per sorvegliare – ma è anche ciò che il potere teme. Perché la conoscenza libera, accessibile, condivisa è una forma di emancipazione. La conoscenza è di tutti: portiamola in piazza.</p>
-    </div>
-
-    <div id="limite" class="theme-content">
-      <h2>Limite</h2>
-      <p>Ogni epoca ha i suoi limiti, ma la nostra si scontra con la finitezza del pianeta, delle risorse, dell’attenzione, della capacità di comprensione. Il limite non è solo un confine da superare, ma anche un richiamo alla responsabilità, alla cura, alla sostenibilità.</p>
-      <p>Scienzapop 2025 ci invita a riflettere sui limiti: fisici, sociali, tecnologici e ambientali. Perché la scienza non serve solo a spingersi oltre, ma anche a comprendere dove e perché fermarsi. Un’occasione per guardare al futuro con consapevolezza, insieme.</p>
-    </div>
+    <h1>scienza e/<span class="accento">è</span> potere</h1>
+    <p>scienzapop torna nel cuore dell’Esquilino con tre giorni di incontri aperti a tutte e tutti. Discuteremo insieme di clima, intelligenza artificiale, inclusione e spazio, con parole semplici e idee potenti.</p>
+    <p>Il rapporto tra scienza e potere è ambivalente: la scienza è usata dal potere per controllare, per estrarre, per sorvegliare – ma è anche ciò che il potere teme. Perché la conoscenza libera, accessibile, condivisa è una forma di emancipazione. La conoscenza è di tutte e tutti: portiamola in piazza.</p>
   </div>
 
   <footer>
     <p>scienzapop © 2025 · Festival indipendente dell’Esquilino</p>
   </footer>
-
-  <script>
-    const btnPotere = document.getElementById('btn-potere');
-    const btnLimite = document.getElementById('btn-limite');
-    const contentPotere = document.getElementById('potere');
-    const contentLimite = document.getElementById('limite');
-
-    btnPotere.addEventListener('click', () => {
-      btnPotere.classList.add('active');
-      btnLimite.classList.remove('active');
-      contentPotere.classList.add('active');
-      contentLimite.classList.remove('active');
-    });
-
-    btnLimite.addEventListener('click', () => {
-      btnLimite.classList.add('active');
-      btnPotere.classList.remove('active');
-      contentLimite.classList.add('active');
-      contentPotere.classList.remove('active');
-    });
-  </script>
 </body>
 </html>
